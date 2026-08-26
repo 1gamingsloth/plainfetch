@@ -5,7 +5,6 @@ Plainfetch is meant to be an easy to use alternative to larger fetch scripts.
 ## Picture
 ![plainfetch screenshot](assets/screenshot.png)
 
-
 ## License 
 Plainfetch is licensed under MIT.
 
