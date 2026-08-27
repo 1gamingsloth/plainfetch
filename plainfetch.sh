@@ -62,11 +62,6 @@ if [ -r /proc/uptime ]; then
     ' /proc/uptime)
 fi
 
-
-# colors
-cyan='\033[36m'
-reset='\033[0m'
-
 # draw lines and stuff
 width=80
 line=$(printf '%*s' $((width - 2)) '' | tr ' ' '-')
@@ -96,8 +91,7 @@ while [ "$i" -le 9 ]; do
 
     content=$(printf '%-20s  %s' "$left" "$right")
 
-    printf '%b│%b %-*s %b│%b\n' \
-        "$cyan" "$reset" "$((width - 4))" "$content" "$cyan" "$reset"
+    printf '│ %-*s │\n' "$((width - 4))" "$content"
 
     i=$((i + 1))
 done < "$tmp"
